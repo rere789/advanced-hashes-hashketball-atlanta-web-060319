@@ -80,10 +80,11 @@ def player_stats(players_names)
   final_stats = {}
     game_hash.each do |team, details|
       details[:player_name].each do |stats|
-       binding.pry 
+       
         if stats[:player_name] == players_name
           stats.delete(:player_name)
           final_stats = stats 
+      binding.pry 
         end 
     end
   end 
