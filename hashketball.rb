@@ -82,7 +82,7 @@ def player_stats(players_names)
       details[:player_names].each do |stats|
        
         if stats[:player_name] == players_name
-          stats.delete(:players_name)
+          stats.delete(:player_name)
           final_stats = stats 
         end 
     end
