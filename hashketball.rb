@@ -98,7 +98,11 @@ def big_shoe_rebounds
           if size >= big_shoe 
             big_shoe << size
           else size <= big_shoe
-            return stats[:]
+            return stats[:rebounds]
+          end 
+        end
+      end 
+    end 
 end 
 
 
