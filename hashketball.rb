@@ -80,7 +80,6 @@ def player_stats(players_names)
   final_stats = {}
     game_hash.each do |team, details|
       details[:players].each do |stats|
-       
         if stats[:player_name] == players_names
           stats.delete(:player_name)
           final_stats = stats 
@@ -90,6 +89,8 @@ def player_stats(players_names)
   end 
   final_stats
 end 
+
+def big_shoe_rebounds
 
 
 
